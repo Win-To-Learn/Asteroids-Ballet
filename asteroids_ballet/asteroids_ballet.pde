@@ -317,6 +317,9 @@ void draw() {
         ball5.move();
         ball5.display();
         
+        //the ship is destroyed if an asteroid center is within 50 units of the back of
+        //of the ship.  if the ship is pointing towards the asteroid, the asteroid is
+        //destroyed instead.
         if (abs(ball1.x - thrust_x) < 50 & abs(ball1.y - thrust_y) < 50 ) {
           shipDestroyed = true;
         }
