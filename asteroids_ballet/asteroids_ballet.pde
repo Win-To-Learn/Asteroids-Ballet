@@ -258,10 +258,10 @@ void draw() {
         // Translate origin to center
         translate(width/2,height/2);
         handle(0, moves[0]);
-        theta = gy[0]*.04;
-        thrust = ay[0]*.01;
-        thrust_y = thrust_y + -ay[0]*1.3;
-        thrust_x = thrust_x + -ax[0]*1.3;
+        theta = gy[0]*.045;
+        //thrust = ay[0]*.01;
+        thrust_y = thrust_y + -ay[0]*1.4;
+        thrust_x = thrust_x + -ax[0]*1.4;
         place_holder = place_holder + theta;
 
         textSize(40);
